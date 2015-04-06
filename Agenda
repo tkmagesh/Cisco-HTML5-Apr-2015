@@ -1,0 +1,15 @@
+1. Local Storage
+2. Session Storage
+3. WebSQL (obsolete)
+4. IndexedDb
+5. Offline Application Cache
+6. Web Sockets
+7. Server Sent Events
+8. Web Workers
+9. Native Audio
+10. Native Video
+11. New Input Types
+12. New Structural Elements
+13. Geo Location API
+14. Canvas
+15. Notifications API

@@ -1,0 +1,11 @@
+window.localStorage (object)
+    key/value store
+    Both key value should be strings
+    
+    APIs
+    - setItem(key,value)
+    - getItem(key) //-> value
+    - removeItem(key)
+    - key(index) //-> key
+    - clear()
+    - length
