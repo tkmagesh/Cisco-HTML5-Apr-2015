@@ -26,17 +26,17 @@
             document.getElementById("btnAdd").addEventListener("click", onBtnAddClick);
             document.getElementById("btnRemoveCompleted").addEventListener("click", onBtnRemoveCompletedClick);
             
-            for(var i=0; i<window.localStorage.length;i++){
-                var key = window.localStorage.key(i);
-                var taskName = window.localStorage.getItem(key);
+            for(var i=0; i<window.sessionStorage.length;i++){
+                var key = window.sessionStorage.key(i);
+                var taskName = window.sessionStorage.getItem(key);
                 addTaskToList(key, taskName);
             }
         }
         function onBtnAddClick(){
             var taskName = document.getElementById("txtTask").value;
-            //store in localStorage
+            //store in sessionStorage
             var newId = new Date().valueOf().toString();
-            window.localStorage.setItem(newId, taskName);
+            window.sessionStorage.setItem(newId, taskName);
             addTaskToList(newId, taskName);
         }
         function addTaskToList(key, taskName){
@@ -57,7 +57,7 @@
                 var taskItem = taskItems[i];
                 if (taskItem.classList.contains("completed")){
                     var taskIdToRemove =  taskItem.getAttribute("taskId");
-                    window.localStorage.removeItem(taskIdToRemove);
+                    window.sessionStorage.removeItem(taskIdToRemove);
                     taskItem.remove();
                 }
             }

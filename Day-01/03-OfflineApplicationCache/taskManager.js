@@ -1,26 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Task Manager</title>
-    <style>
-        h1{
-            border-top : 2px solid blue;
-            border-bottom : 2px solid blue;
-            padding: 10px;
-            background-color: lightblue;
-        }
-        .completed{
-            color : red;
-            text-decoration: line-through;
-            font-style: italic;
-            font-weight: bold;
-        }
-        li{
-            cursor: pointer;
-        }
-    </style>
-    <script>
         window.addEventListener("DOMContentLoaded",init);
         function init(){
             document.getElementById("btnAdd").addEventListener("click", onBtnAddClick);
@@ -63,17 +40,3 @@
             }
                 
         }
-    </script>
-</head>
-<body>
-    <h1>Task Manager</h1>
-    <div class="content">
-        <label for="">Task :</label>
-        <input type="text" name="" id="txtTask">
-        <input type="button" value="Add Task" id="btnAdd">
-        <input type="button" value="Remove Completed" id="btnRemoveCompleted">
-        <ol id="olTaskList">
-        </ol>
-    </div>
-</body>
-</html>
