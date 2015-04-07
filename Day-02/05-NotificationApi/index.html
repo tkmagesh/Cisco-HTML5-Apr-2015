@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+    function showNotification(){
+        console.log("show");
+        Notification.requestPermission(function(){
+            new Notification("Heading",{
+               body : "http://www.google.com",
+               icon : "logo.png"
+            });
+        });
+    }
+    </script>
+</head>
+<body>
+    <input type="button" value="Show" onclick="showNotification()">
+</body>
+</html>
